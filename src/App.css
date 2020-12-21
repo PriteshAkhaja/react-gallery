@@ -13,6 +13,9 @@
   }
 }
 
+body{
+  background-color: black;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +38,119 @@
   to {
     transform: rotate(360deg);
   }
+}
+.div{
+  width: 100%;
+  height: 100px;
+}
+.overlay-content {
+  position: relative;
+  top: 20px;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  height: 65px;
+  background: #add8e6;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.overlay input[type=text]:hover {
+  background: #99badd;
+}
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background:#0047ab;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.overlay button:hover {
+  background: #0f52ba;
+}
+
+
+.container {
+  position: relative;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+  display: block;
+  background: rgba(43, 24, 24, 0);
+}
+
+img {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  left: 0;
+}
+
+.title {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left:170px;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  border-radius: 20px;
+  border: solid white 1px;
+  background-color:transparent;
+  color:white;
+}
+
+.button:hover {
+  border: solid blue 1px;
+  background-color:blue;  
+  color:white;
+}
+
+
+.container:hover .button {
+  opacity: 1;
+}
+
+.container:hover Img{
+  opacity: 0.9;
 }

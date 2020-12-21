@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import { Heading } from './components/Heading';
 import { Search } from './components/Search';
 import { UnsplashImage } from './components/UnsplashImage';
@@ -9,6 +8,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 
 // Style

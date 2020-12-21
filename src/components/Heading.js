@@ -5,7 +5,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import ImageSearchIcon from "@material-ui/icons/ImageSearch";
-import FaceIcon from '@material-ui/icons/Face';
 
 const useStyles = makeStyles((theme : Theme) =>
   createStyles({
@@ -17,7 +16,7 @@ const useStyles = makeStyles((theme : Theme) =>
       marginLeft: theme.spacing(4)
     },
     menuB: {
-      marginLeft: theme.spacing(150),
+      marginLeft: theme.spacing(30),
     }
   })
 );
@@ -38,10 +37,7 @@ export function Heading() {
             <ImageSearchIcon fontSize="large" />
           </IconButton>
           <Typography variant="h5" color="inherit">
-            Photoss
-          </Typography>
-          <Typography variant="h10" className={classes.menuB} color="inherit">
-            <a href="https://priteshakhaja.netlify.app" target="_blank"><FaceIcon fontSize="large" color="action"/></a>
+            Photos
           </Typography>
         </Toolbar>
       </AppBar>
